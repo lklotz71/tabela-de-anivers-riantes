@@ -1,0 +1,68 @@
+@font-face {
+    font-family: Laiza;
+    src: url("static/PlayfairDisplay-ExtraBoldItalic.ttf");
+}
+:root {
+    --cor-fundo: #eccbcb;
+    --cor-titulo: #602a2e;
+    --cor-paragrafo: #a76a6b;
+    --cor-lnk: #3e0b12;
+    --fonte: Laiza;
+}
+
+
+
+body{
+background-color: var(--cor-fundo);
+font-family: var(--fonte);
+width: 300px;
+max-width: 100%;
+margin-top: 0;
+margin-bottom: 0;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+h1 {
+color: var(--cor-titulo);
+}
+
+p {
+color: var(--cor-paragrafo);
+}
+
+ul li a {
+color: var(--cor-lnk);
+}
+
+/*<div class="imagem"> */
+div.imagem {
+text-align: center;
+
+}
+
+ul {
+list-style: none;
+padding: 0;
+}
+ul li::before {
+content: "\2665";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+color: #D60F6D; /* Change the color */
+font-weight: bold; /* If you want it to be bold */
+display: inline-block; /* Needed to add space between the bullet and the text */
+width: 1em; /* Also needed for space (tweak if needed) */
+margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+img {
+border-radius: 20%;
+border-color: #d9aaaa;
+border-width: 8px;
+border-style: solid;
+
+}
+
+
+table {
+    width: 100%;
+}
